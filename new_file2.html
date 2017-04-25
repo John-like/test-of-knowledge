@@ -1,0 +1,112 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" mrc="text/html; charset=gb2312" />
+<title>玄色多级弹出菜单 - Javascript经典专区</title>
+<style>
+body {
+margin: 7px;
+font:12px Verdana, Arial, Helvetica, sans-serif;
+}
+* {
+list-style-type: none;
+margin: 0px;
+padding: 0px;
+border: thin none;
+}
+#nav {
+position: absolute;
+font-size: 11px;
+opacity: 0.8;
+}
+#nav a {
+display: block;
+width: 100px;
+height: 15px;
+padding: 3px 5px 12px;
+background: #666;
+color: #fff;
+text-decoration: none;
+}
+#nav a:hover {
+background: #333;
+}
+#nav li {
+float: left;
+clear: left;
+width: 120px;
+background: #ccc;
+padding-bottom: 3px;
+}
+#nav ul {
+position: absolute;
+margin-left: 115px;
+margin-top: -30px;
+}
+#nav ul {
+display: none;
+}
+#nav li.show ul {
+display: block;
+}
+#nav li.show li ul {
+display: none;
+}
+#nav li li.show ul {
+display: block;
+}
+</style>
+<script language="javascript" type="text/javascript">
+function menuFix() {
+var sfEls = document.getElementById("nav").getElementsByTagName("li");
+for (var i=0; i<sfEls.length; i++) {
+sfEls[i].onmouseover=function() {
+this.className+=(this.className.length>0? " ": "") + "show";
+}
+sfEls[i].onmouseout=function() {
+this.className=this.className.replace(new RegExp("( ?|^)show\\b"), "");
+}
+}
+}
+window.onload=menuFix;
+</script>
+</head>
+<body>
+<ul id="nav">
+<li><a href="#">mb5u.com</a>
+<ul>
+<li><a href="#">Lasted Update</a>
+<ul>
+<li><a href="#">Class</a></li>
+<li><a href="#">New Update</a></li>
+</ul>
+</li>
+<li><a href="#">ASP</a>
+<ul>
+<li><a href="/sort/list_1_11_1.shtml">聊天留言</a></li><li><a href="/sort/list_1_12_1.shtml">企业建站</a></li><li><a href="/sort/list_1_13_1.shtml">论坛社区</a></li><li><a href="/sort/list_1_14_1.shtml">新闻文章</a></li><li><a href="/sort/list_1_145_1.shtml">博客日记</a></li><li><a href="/sort/list_1_29_1.shtml">CMS系统</a></li><li><a href="/sort/list_1_20_1.shtml">学校政府</a></li><li><a href="/sort/list_1_28_1.shtml">影音视频</a></li><li>
+</ul>
+</li>
+<li><a href="/">PHP</a>
+<ul>
+<li><a href="/sort/list_1_11_1.shtml">聊天留言</a></li><li><a href="http://mb5u.com/sort/list_1_12_1.shtml">企业建站</a></li><li><a href="http://mb5u.com/sort/list_1_13_1.shtml">论坛社区</a></li><li><a href="/sort/list_1_14_1.shtml">新闻文章</a></li><li><a href="http://mb5u.com/sort/list_1_145_1.shtml">博客日记</a></li><li><a href="http://mb5u.com/sort/list_1_29_1.shtml">CMS系统</a></li><li><a href="http://mb5u.com/sort/list_1_20_1.shtml">学校政府</a></li><li><a href="http://mb5u.com/sort/list_1_28_1.shtml">影音视频</a></li><li>
+</ul>
+</li>
+<li><a href="#">Delphi</a>
+<ul>
+<li><a href="http://mb5u.com/sort/list_5_80_1.shtml">游戏娱乐</a></li><li><a href="/sort/list_5_82_1.shtml">媒体网络</a></li><li><a href="/sort/list_5_99_1.shtml">窗体界面</a></li><li><a href="http://mb5u.com/sort/list_5_102_1.shtml">算法相关</a></li><li><a href="/sort/list_5_93_1.shtml">系统相关</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#">VC++</a>
+<ul>
+<li><a href="/sort/list_5_80_1.shtml">游戏娱乐</a></li><li><a href="/sort/list_5_82_1.shtml">媒体网络</a></li><li><a href="/sort/list_5_99_1.shtml">窗体界面</a></li><li><a href="/sort/list_5_102_1.shtml">算法相关</a></li><li><a href="/sort/list_5_93_1.shtml">系统相关</a></li>
+</ul>
+</li>
+<li><a href="/sort/list_5_1.shtml">Java</a>
+<ul>
+<li><a href="/sort/list_5_80_1.shtml">游戏娱乐</a></li><li><a href="/sort/list_5_82_1.shtml">媒体网络</a></li><li><a href="/sort/list_5_99_1.shtml">窗体界面</a></li><li><a href="/sort/list_5_102_1.shtml">算法相关</a></li><li><a href="/sort/list_5_93_1.shtml">系统相关</a></li>
+</ul>
+</li>
+</ul></body>
+</html>

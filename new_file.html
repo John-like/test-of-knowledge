@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-1.11.0.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+			
+			var tc_browser=navigator.appName 
+			var tc_b_version=navigator.appVersion 
+			var tc_version=tc_b_version.split(";"); 
+			
+			var tc_trim_Version=tc_version[1].replace(/[ ]/g,""); 
+			
+			console.log(navigator);
+			console.log(tc_browser);
+			console.log(tc_b_version);
+			console.log(tc_version);
+			console.log(tc_trim_Version);
+			
+			
+			 if(tc_browser=="Microsoft Internet Explorer" && tc_trim_Version=="MSIE8.0") 
+			{ 
+			alert("IE 8.0"); 
+			} 
+			else if(tc_browser=="Microsoft Internet Explorer" && tc_trim_Version=="MSIE9.0") 
+			{ 
+			alert("IE 9.0"); 
+			} 
+						
+		</script>
+	</head>
+	<body>
+		<input type="" name="" id="" value=""  placeholder="测试"/>
+	</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<input type="text" id="myText"   value="input text">
+	</body>
+	<script type="text/javascript">
+		function son(name){  
+		   this.sonName = name;  
+		   this.showSonName = function(){  
+		       alert(this.sonName);       //弹出tank  
+		       alert(this.fatherName);    //弹出father,这是父级中的属性，有没有php extends的感觉  
+		   }  
+		}        
+  
+		function father(name){  
+		   this.fatherName = 'father';  
+		   this.showFatherName = function(_callback){  
+		       _callback = eval(_callback);  
+		       _callback.call(this,name);  
+		       //_callback.apply(this,Array(name));  
+		   }  
+		}        
+  
+		var fa = new father("tank");  
+		fa.showFatherName('son');     //传字符串的时候，使用回调的时候，要用eval转换一下  
+		fa.showSonName(); 
+
+	</script>
+</html>
