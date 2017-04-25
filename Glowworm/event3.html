@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			div {
+				padding: 50px 10px;
+				border: 3px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<div>
+				<div id="div3">
+					<div id="div2">
+						<div id="div1">
+			
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script src="js/jquery-1.12.2.js" type="text/javascript" charset="utf-8"></script>
+		<script type="text/javascript">
+//			var oDiv1 = document.getElementById("div1");
+//			var oDiv2 = document.getElementById("div2");
+//			var oDiv3 = document.getElementById("div3");
+//			oDiv1.onclick = fn;
+//			oDiv2.onclick = fn;
+//			oDiv3.onclick = fn;
+//			
+//			function fn( ev ){
+//				var ev = ev || event;
+//				alert( this.id );
+//				ev.cancelBubble = true;
+//			}
+			$('div').not('#div3').click(function( ev ){
+				$(this).css('border','1px solid blue');
+				//ev.stopPropagation(); //阻止冒泡事件
+			});
+			
+		</script>
+	</body>
+</html>
