@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		
+		<title></title>
+<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, width=device-width">
+		<!-- 引入 jQuery.mmenu.css -->
+		<link type="text/css" href="css/mmenu.min.css" rel="stylesheet" />
+
+		<!-- 引入 jQuery 和 jQuery.mmenu.js -->
+		<script type="text/javascript" src="js/jquery.min.js"></script>
+		<script type="text/javascript" src="js/mmenu.min.js"></script>
+	</head>
+
+	<body>
+		
+<div id="page">
+    <!--头部 start-->
+    <header>
+        <div class="l_tbn"><a href="#menu" class="glyphicon glyphicon-th-large"></a></div>
+        标题
+    </header>
+    <!--头部 end-->
+    
+    <!--正文 start-->
+    <div class="content">正文的内容</div>
+    <!--正文 end-->
+    
+    <!--侧边菜单 start-->
+    <nav id="menu">
+        <ul>
+            <li class="Selected"><a href="#">按钮1</a></li>
+            <li><a href="#">按钮2</a></li>
+            <li><a href="#">按钮3</a></li>
+            <li><a href="#">按钮4</a></li>
+            <li><a href="#">按钮5</a></li>
+        </ul>
+    </nav>
+    <!--侧边菜单 end-->
+</div>
+
+	</body>
+
+				<script>
+					$(document).ready(function() {
+						$("#menu").mmenu({
+							"slidingSubmenus": false,
+							"extensions": ["pagedim-black", "theme-dark"]
+						})
+					})
+				</script>
+
+</html>

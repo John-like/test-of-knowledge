@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script type="text/javascript">
+			function test(){
+				var b={
+					num:20
+				};
+				//b.num=40
+				return{
+					getNum:function(){
+						return b.num;
+					},
+					setNum:function(num){
+						
+						console.log(b.num)
+						return b.num=num;
+						
+					}
+				}
+			}
+			
+			//console.log(test().getNum());
+			console.log(test().setNum(30))
+			//console.log(test().getNum());
+		</script>
+	</body>
+</html>
