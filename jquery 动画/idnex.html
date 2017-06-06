@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<img id="img" src="img/safari_64x64.png"/>
+		
+	</body>
+	
+	<script type="text/javascript">
+		var rotation = function (){
+			$("#img").rotate({
+			angle:0,
+			animateTo:360,
+			callback: rotation,
+			easing: function (x,t,b,c,d){ // t: current time, b: begInnIng value, c: change In value, d: duration
+			  return c*(t/d)+b;
+			}
+			});
+		}
+		rotation();					
+				
+	</script>
+</html>
