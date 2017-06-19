@@ -1,0 +1,11 @@
+/*footer*/
+footer{position: fixed; overflow: hidden; bottom: 0;height: 1.0rem;width:100%;background: rgb(72,72,80); border-top: 1px solid rgb(99,99,99);}
+footer a{display: block; border-top: 5px solid rgb(72,72,80);float: left; width: 0.76rem; height: 0.85rem; padding: 0.06rem 0.26rem 0;}
+footer a:nth-child(3){padding-top: 0.063rem}
+footer p{color: white; font-size: 0.24rem; text-align: center; margin-top: 0.05rem;}
+footer a:nth-child(3) p{margin-top: 0.05rem;}
+footer a div{width: 0.5; height: 0.5rem;}
+footer a:hover{border-top:5px solid rgb(228,54,105); }
+nav{
+	margin: 0 auto;
+}

@@ -1,0 +1,19 @@
+*{padding: 0; margin: 0;}
+html,body{width:100%; height: 100%;}
+body{font-family: 'Microsoft YaHei', sans-serif}
+img{display: block; width: 100%; height: 100%;}
+li{list-style: none;}
+a,a:hover{text-decoration: none;}
+
+/*header*/
+header{background: rgb(228,54,107); width: 100%; height: 0.85rem;overflow: hidden; position: relative;}
+header div{position: absolute;left:0; font-size: 0.37rem; right: 0; top: 0; bottom: 0; margin: auto;line-height: 0.4rem;width: 2.4rem; height: 0.4rem; color: white;}
+header div a{display: block; float: left;width: 0.98rem; height: 0.33rem; margin-top: 0.05rem; }
+header div p{float: right;height: 0.4rem; width: 1.2rem; text-align: center; line-height: 0.4rem;}
+
+/*search*/
+#s{width: 100%; border-bottom: 1px solid black; border-top: 1px solid black; height: 0.88rem; background: rgb(82,82,82);overflow: hidden; position: relative;}
+.search{width: 5.92rem; background: #fff; -moz-border-radius: 0.3rem; -webkit-border-radius: 0.3rem; border-radius: 0.3rem; height: 0.6rem; position: absolute;  left:0; right: 0; top: 0; bottom: 0; margin: auto;}
+.search div{width: 0.4rem;float: left; height: 0.4rem; margin-left: 0.26rem; margin-top: 0.1rem;}
+.search input{ width:5.0rem; float: left; text-indent: 0.3em;font-size: 0.24rem; height: 0.6rem;display: block;border: none; outline: none; color: rgb(148,148,150);}
+
